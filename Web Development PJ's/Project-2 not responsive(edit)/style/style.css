@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:wght@300&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Quintessential&family=Roboto:wght@300;400;500&family=Sedgwick+Ave&family=Work+Sans&display=swap');
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    font-family: 'Quintessential', cursive;
+    display: flex;
+    align-items: center;
+}
+/* andar k masale ko flex */
+
+/* For navigation bar: Logo and Image */
+
+/* For navigation bar: List Styling */
+
+#logo{
+    margin: 3px 6px;
+    height: 105px; ;
+
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+}
+
+#navbar::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* what will happen of z index, the content will come outside of the background */
+    opacity:0.3;
+}
+#navbar ul{
+    display: flex;
+}
+/* now, here we will use psuedo selectors and that ninja techniqe of before and after p sel to change the background color of the navbar */
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION */
+#home{
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 820px;
+    width: 100%;
+    z-index: -1;
+    /* what will happen of z index, the content will come outside of the background */
+    opacity:0.5;
+}
+#home h1{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+/* Utility Classes */
+.hprimary{
+    font-family: 'Work Sans', sans-serif;
+
+    font-size:2.8rem;
+    padding: 12px;
+}
+.hsecondary{
+    font-family: 'Work Sans', sans-serif;
+
+    font-size:2.2rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Services section */
+.services-container{
+    margin: 3px;
+    padding: 6px;
+    border-radius: 30px;
+    background-color: antiquewhite;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box
+{
+    padding: 34px;
+    margin: 3px 8px;
+    border-radius: 30px;
+    border: 2px solid grey;
+    background-color: rgb(228, 226, 226);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+#services .box h2{
+    font-family: 'Quintessential', cursive;
+}
+#services .box p {
+    font-family: 'Work Sans', sans-serif;
+
+}
+#services .box:hover{
+    background-color: rgb(228, 227, 227);
+}
+
+.img-container1{
+    padding: 1px;
+    background-color: rgba(243, 238, 238, 0.9);
+    border-radius: 30px;
+}
+#food{
+    margin: 34px;
+    display: flex;
+}
+#food .box1{
+    padding: 34px;
+    margin: 3px 8px;
+    border-radius: 30px;
+    border: 2px solid grey;
+    background-color: rgb(228, 226, 226);
+}
+#food .box1 img{
+    display: block;
+    margin: auto;
+    height: 558px;
+    width: 351px;
+}
+#food .box1 h2{
+    font-family: 'Quintessential', cursive;
+}
+#food .box1 p {
+    font-family: 'Work Sans', sans-serif;
+
+}
+#food .box1:hover{
+    opacity: 0.9;
+}
+#brands-avlbl{
+    height: 344px;
+    position: relative;
+}
+#brandus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brandus img{
+    height: 100px;
+    margin: 12px 18px;
+    padding: 30px;
+}
+
+.brands{
+    padding: 4px;
+}
+#brandus::before{
+    content: "";
+    position: absolute;
+    background: url('/img/bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 349px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* contact section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/img/contactus.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 8px 20px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+#contact-box{
+    font-family: 'Quintessential', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    /* next big project will be flipkart copy */
+}

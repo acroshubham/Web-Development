@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Fitness</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET */
+        body{
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            background:url('img/1484318.webp');
+            background-size: 100% ;
+            /* height: 700px; */
+            /* background-repeat: no-repeat; */
+            font-family: 'Work Sans', sans-serif;
+        }
+        .left{
+            /* block element display should be inline block to set the width*/
+            display: inline-block;
+            /* border: 2px solid rgb(0, 255, 0); */
+            position: absolute;
+            /* set relative to parent i.e. header */
+            left: 34px;
+            top: 20px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .left img{
+            width: 133px;
+            /* filter: invert(100%) will invert the color */
+        }
+        .mid{
+            /* to do an element in center one has to just follow these three steps */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(0, 255, 255); */
+        }
+        .right{
+            position: absolute;
+            /* set realative to parent i.e. header */
+            right: 34px;
+            top: 35px;
+            display: inline-block;
+            /* border: 2px solid rgb(255, 0, 221); */
+        }
+        .navBar{
+            display: inline-block;
+            /* it'll help to stay the block element inline and then furtur it'll
+            help to set the width of the block */
+        }
+        .navBar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navBar li a{
+            color:  grey;
+            display: inline-block;
+            text-decoration: none;
+            /* will remove the underline of the home */
+            padding: 5px 5px;
+        }
+        .navBar li a:hover, .navBar li a.active{
+            text-decoration: underline;
+            color: black;
+        }
+        .btn{
+            font-family: 'Work Sans', sans-serif;
+            margin: 0px 9px;
+            /* color: white; */
+            /* background-color: black; */
+            padding: 3px 10px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(102, 101, 101);
+        }
+        .container{
+            border: 3px solid gray;
+            margin: 76px 30px;
+            padding: 40px 100px;
+            width: 30%;
+            border-radius: 20px;
+        }
+        .form-group input{
+            font-family: 'Work Sans', sans-serif;
+            text-align: center;
+            display: block;
+            width: 370px;
+            padding: 2px;
+            margin: 11px;
+            border: 3px solid grey;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width:93%;
+        margin: auto;
+    }
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>
+                Shubham Fitness
+            </div>
+            <!-- logo shubham fitness -->
+        </div>
+        
+        <div class="mid">
+            <ul class="navBar">
+                <li> <a href="#" class="active"> <strong> Home </strong></a> </li>
+                <li> <a href="#"> <strong> About Us </strong></a> </li>
+                <li> <a href="#"> <strong> Fitness Calculator </strong></a> </li>
+                <li> <a href="#"> <strong> Contact Us </strong></a> </li>
+            </ul>
+            <!-- navigation -->
+        </div>
+        
+        <div class="right">
+            <!-- for buttons -->
+            <button class="btn">Call us Now</button>
+            <button class="btn">E-mail Us</button>
+        </div>
+
+        <div class="container">
+            <h2> <strong> Join the best of gym of delhi now </strong> </h2>
+            <form action="noaction.php"></form>
+            <!-- div.form.group -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail Address">
+            </div>
+            <!-- button.btn -->
+            <button class="btn">
+                Submit
+            </button>
+        </div>
+    </header>
+</body>
+</html>
